@@ -3,7 +3,7 @@
 def word_counter(text):
     words = text.split()
     amount = len(words)
-    return f"{amount} words found in the document"
+    return f"Found {amount} total words"
 
 # 1. makes our text lowercase 
 # 2. we create an empty dictionary

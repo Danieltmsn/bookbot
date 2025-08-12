@@ -1,4 +1,6 @@
 from stats import word_counter, char_counter
+from report import generate_report
+
 
 #function to read the file(to bee converted into a string later on)
 
@@ -10,9 +12,8 @@ def get_book_text(filepath):
     
 def main(get_book_text):
     text = get_book_text("books/frankenstein.txt")
-    print(text)
-    print(word_counter(text))
-    print(char_counter(text))
+    generate_report()
+    
     
 
 
