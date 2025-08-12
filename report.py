@@ -1,11 +1,11 @@
 from stats import word_counter,char_counter,sorted_dict
 
-def generate_report():
-    with open("books/frankenstein.txt") as f:
+def generate_report(filepath):
+    with open(filepath, encoding="utf-8") as f:
         text = f.read()
 
     print(f"""============ BOOKBOT ============
-Analyzing book found at books/frankenstein.txt...
+Analyzing book found at {filepath}
 ----------- Word Count ----------
 {word_counter(text)}
 --------- Character Count -------""")
