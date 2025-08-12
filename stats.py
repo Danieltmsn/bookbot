@@ -20,6 +20,13 @@ def char_counter(text):
             my_dict[n] = 1
     return my_dict
 
+def sorted_dict(my_dict):
+    dict_list = []
+    for key, value in my_dict.items():
+        dict_list.append({"key": key, "value": value})
+
+    dict_list.sort(key=lambda x: x["value"], reverse=True)
+    return dict_list
 
     
 
